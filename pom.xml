@@ -21,28 +21,23 @@
     </properties>
 
     <dependencies>
-        <!-- ActiveMQ Client -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
             <version>${activemq.version}</version>
         </dependency>
 
-        <!-- ActiveMQ Broker -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
             <version>${activemq.version}</version>
         </dependency>
 
-        <!-- ActiveMQ Spring pour fonctionnalités supplémentaires -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-spring</artifactId>
             <version>${activemq.version}</version>
         </dependency>
-
-        <!-- JUnit pour les tests (optionnel) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -58,7 +53,7 @@
 
     <build>
         <plugins>
-            <!-- Compiler Plugin -->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -69,7 +64,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Exec Plugin pour exécution facile -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
